@@ -1,4 +1,0 @@
-import byme
-
-byme.sign()
-
