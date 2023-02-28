@@ -6,5 +6,5 @@ headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWe
 res = requests.get(url, headers=headers)
 res.raise_for_status()
 
-with open("novelpiatest.html", "w", encoding="UTF8") as f:
+with open("nadocoing.html", "w", encoding="UTF8") as f:
     f.write(res.text)
