@@ -9,11 +9,14 @@ res.raise_for_status()
 
 soup = BeautifulSoup(res.text, "lxml")
 
-cartoons = soup.find_all("div", attrs={"class": "info"})
-total_lieks = 0
+cartoons = soup.find_all("li", attrs={"class": "tm7"})
 
 for cartoon in cartoons:
-    likes = cartoon.find("span", attrs={"class": "like"}).get_text()
-    print(cartoon.strong.get_text() + "\t\t좋아요: " + likes)
+    title = cartoon.find("strong").get_text()
+    link = cartoon.find("a", attrs={"class": "link"})["href"]
+    likes = cartoon.find("span", attrs={"class": "like"}).em.get_text()
+    print(f"제목 : {title}\t\t좋아요 : {likes}\t\t링크 : {link}")
+
+
 
 
