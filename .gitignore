@@ -4,5 +4,7 @@
 # IntelliJ project files
 .idea
 *.iml
+.jpg
 out
 gen
+.
