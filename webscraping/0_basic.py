@@ -1,7 +1,7 @@
-import re
 
-word = "cat"
 
-pattern = re.compile("[c.t]")
+word = " rocstern is badassr "
+num_str = "1,000,000"
 
-print(re.match(pattern, word))
+print(word.strip())
+
