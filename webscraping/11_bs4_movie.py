@@ -35,6 +35,6 @@ for year in range(2013, 2023):
         if index >= 4:
             break
 
-
-
+end_time = time.time()
+print(f"소요 시간: {end_time - start_time:5f} 초")
 
