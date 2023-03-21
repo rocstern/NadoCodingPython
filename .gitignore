@@ -12,4 +12,4 @@ gen
 *.csv
 *.zip
 LICENSE.chromedriver
-Pipfile.lock
+UserInfo.py
